@@ -13,10 +13,10 @@
                     <input type="text" id="display">
                 </div>
                 <div>
-                    <input type="button" value="Ac" onclick="allClear('0')">
-                    <input type="button" value="DE" onclick="deleteElement()">
-                    <input type="button" value=".">
-                    <input type="button" value="/">            
+                    <input type="button" value="Ac" class="deleteButton" onclick="allClear()">
+                    <input type="button" value="DE" class="deleteButton" onclick="deleteElement()">
+                    <input type="button" value="." onclick="inputElement('.')">
+                    <input type="button" value="/" onclick="inputElement('/')">            
                 </div>    
                 <div>
                     <input type="button" value="7" onclick="inputElement('7')">
@@ -39,22 +39,12 @@
                 <div>
                     <input type="button" value="00" onclick="inputElement('00')">
                     <input type="button" value="0" onclick="inputElement('0')">
-                    <input type="button" value="=" class="equal" onclick="inputElement('=')">
+                    <input type="button" value="=" class="equal" onclick="calc()">
                 </div>
             </form>
         </div>
     </div>
-    <script>
-        function inputElement(value){
-            document.getElementById("display").value += value;
-        }
-        function allClear(value){
-            document.getElementById("display").value =value;
-        }
-        function deleteElement(){
-        var element = document.getElementById("display").value;
-        document.getElementById("display").value = element.slice(0,-1);
-        }
+    <script src="index.js">
     </script>
 </body>
 </html>
