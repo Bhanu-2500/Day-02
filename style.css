@@ -49,12 +49,12 @@ form input.equal{
     width: 145px;
 }
 form div .deleteButton{
-    background-color: FE0000;
+    background-color: #FE0000;
     color: #fff;
     font-weight: bolder;
 }
 form div .equal{
-    background-color: 16FF00;
+    background-color: #16FF00;
     color:black;
     font-weight: bolder;
 }
